@@ -3,7 +3,15 @@
 {% block content %}
 
     <h1>Welcome to blog application</h1>
+    <h5>Top 10 Articles</h5>
+
+    <ul>
+        {% for article in latest_articles %} 
+            <li>{{ article }}</li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}
+
 
 Document
